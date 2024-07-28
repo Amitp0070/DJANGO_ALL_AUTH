@@ -15,10 +15,10 @@
 </head>
 
 <body class="bdy">
-    <div class="card m-5" style="width: 400px; border: 2px solid black;">
+    <div class="card m-5 pt-5" style="width: 400px; height: 250px; border: 2px solid black;">
         <div class="card-body" style="display: block; margin: auto;">
             {% if user.is_authenticated %}
-            <h2>Hi! {{ user.username }}</h2>
+            <h2 class="text-center pb-3">Hi! {{ user.username }}</h2>
             <h4>Thank you for supporting me!</h4>
             {% else %}
             <h2>Hi Guest user!</h2>
